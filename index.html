@@ -41,18 +41,18 @@
             <br>
         </header>
         <main>
-            <form onsubmit="senhaOK()" name="cadastro" method="POST" accept-charset="UTF-8" action="">
+            <form onsubmit="senhaOK()" name="cadastro" method="POST" accept-charset="UTF-8" action="" >
                 <label for="primeiroNome">Primeiro nome:</label>
-                <input type="text" id="primeiroNome">
+                <input type="text" id="primeiroNome" required>
                 <br>
                 <label for="ultimoNome">Último nome</label>
-                <input type="text" id="ultimoNome">
+                <input type="text" id="ultimoNome" required>
                 <br>
                 <label for="Email">Email profissional:</label>
-                <input type="email" name="" id="Email:">
+                <input type="email" name="" id="Email:" required>
                 <br>
                 <label for="cpf">Cadastro de Pessoa Física (CPF):</label>
-                <input type="text" name="" id="cpf">
+                <input type="text" name="" id="cpf" required>
                 <br>
                 <label for="Professor">é professor?</label>
                 <input type="radio" id="Professor" name="Ocupacao">
@@ -62,7 +62,7 @@
                 <br>
                 <label for="nascimento">Data de nascimento:</label>
                 <br>
-                <input type="datetime-local" name="" id="nascimento">
+                <input type="datetime-local" name="" id="nascimento" required>
                 <br>
                 <label for="corFav">Cor favorita:</label>
                 <input type="color" name="" id="corFav">
@@ -71,13 +71,13 @@
                 <input type="checkbox" name="" id="robo">
                 <br>
                 <label for="senha">Criar uma senha:</label>
-                <input type="password" size="15" name="senha" id="senha">
+                <input type="password" size="15" name="senha" id="senha" required>
                 <br>
                 <label for="senha2">Confirme a sua senha:</label>
-                <input type="password" size="15" name="confirma" id="senha2">
+                <input type="password" size="15" name="confirma" id="senha2" required>
                 <br>
                 <label for="telefone">Insira seu telefone:</label>
-                <input type="tel" name="" id="telefone">
+                <input type="tel" name="" id="telefone" required>
                 <br>
                 <label for="envia   "></label>
                 <input type="submit" id="envia" value="Enviar">
